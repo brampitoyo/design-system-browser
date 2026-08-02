@@ -1,0 +1,73 @@
+/* IBM Carbon Design System - Light Theme
+   Source: https://carbon-elements.netlify.app/colors/examples/preview/
+   Palette: 20 hues × 10 stops (10-100) + black/white/grays
+   Light/dark values are identical per Carbon spec
+*/
+
+[data-design-system="carbon"] {
+  --color-background: var(--canonical-background-default);
+  --color-foreground: var(--canonical-foreground-default);
+  --color-muted: var(--canonical-muted);
+  --color-muted-foreground: var(--canonical-muted-foreground);
+  --color-primary: var(--canonical-primary);
+  --color-primary-foreground: var(--canonical-primary-foreground);
+  --color-secondary: var(--canonical-secondary);
+  --color-secondary-foreground: var(--canonical-secondary-foreground);
+  --color-accent: var(--canonical-accent);
+  --color-accent-foreground: var(--canonical-accent-foreground);
+  --color-destructive: var(--canonical-destructive);
+  --color-destructive-foreground: var(--canonical-destructive-foreground);
+  --color-border: var(--canonical-border);
+  --color-ring: var(--canonical-ring);
+
+  /* Spacing */
+  --spacing-1: 0.125rem;
+  --spacing-2: 0.25rem;
+  --spacing-3: 0.5rem;
+  --spacing-4: 0.75rem;
+  --spacing-5: 1rem;
+  --spacing-6: 1.25rem;
+  --spacing-7: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-9: 2.5rem;
+  --spacing-10: 3rem;
+
+  /* Typography */
+  --font-body: 'TASA Orbiter', system-ui, sans-serif;
+  --font-heading: 'TASA Orbiter', system-ui, sans-serif;
+  --font-mono: 'Lilex', serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.8;
+
+  
+  /* Border Radius */
+  /* CSS fallback for checkbox radius before context effect runs */
+  --radius-checkbox: 0;
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 2px 8px 0 rgb(0 0 0 / 0.15);
+  --shadow-lg: 0 4px 16px 0 rgb(0 0 0 / 0.15);
+}
+
+/* Carbon Dark Theme - same hex values, different application */
+[data-theme="dark"][data-design-system="carbon"] {
+  --color-background: var(--canonical-background-default);
+  --color-foreground: var(--canonical-foreground-default);
+  --color-muted: var(--canonical-muted);
+  --color-muted-foreground: var(--canonical-muted-foreground);
+  --color-secondary: var(--canonical-secondary);
+  --color-secondary-foreground: var(--canonical-secondary-foreground);
+  --color-accent: var(--canonical-accent);
+  --color-accent-foreground: var(--canonical-accent-foreground);
+  --color-border: var(--canonical-border);
+  --color-ring: var(--canonical-ring);
+}

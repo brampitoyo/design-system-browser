@@ -1,0 +1,79 @@
+/* GitHub Primer Design System - Light Theme
+   Source: https://primer.style/product/primitives/color
+   Light and dark have DIFFERENT values - shown side by side
+*/
+
+/* ========== LIGHT THEME ========== */
+[data-design-system="primer"] {
+  --color-background: var(--canonical-bgColor-default);
+  --color-foreground: var(--canonical-fgColor-default);
+  --color-muted: var(--canonical-bgColor-muted);
+  --color-muted-foreground: var(--canonical-fgColor-muted);
+  --color-primary: var(--canonical-fgColor-accent);
+  --color-primary-foreground: var(--canonical-fgColor-onEmphasis);
+  --color-secondary: var(--canonical-bgColor-muted);
+  --color-secondary-foreground: var(--canonical-fgColor-default);
+  --color-accent: var(--canonical-bgColor-accent-muted);
+  --color-accent-foreground: var(--canonical-fgColor-accent);
+  --color-destructive: var(--canonical-fgColor-danger);
+  --color-destructive-foreground: var(--canonical-fgColor-onEmphasis);
+  --color-border: var(--canonical-borderColor-default);
+  --color-ring: var(--canonical-focus-ring-color);
+
+  /* Spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+
+  /* Typography */
+  --font-body: 'TASA Orbiter', system-ui, sans-serif;
+  --font-heading: 'TASA Orbiter', system-ui, sans-serif;
+  --font-mono: 'Lilex', serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  
+  /* Border Radius */
+  /* CSS fallback for checkbox radius before context effect runs */
+  --radius-checkbox: 4px;
+  /* Shadows */
+  --shadow-sm: 0 1px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 3px 6px rgb(0 0 0 / 0.08);
+  --shadow-lg: 0 6px 12px rgb(0 0 0 / 0.1);
+
+}
+
+/* ========== DARK THEME ========== */
+[data-theme="dark"][data-design-system="primer"] {
+  --color-background: var(--canonical-bgColor-default);
+  --color-foreground: var(--canonical-fgColor-default);
+  --color-muted: var(--canonical-bgColor-muted);
+  --color-muted-foreground: var(--canonical-fgColor-muted);
+  --color-primary: var(--canonical-fgColor-accent);
+  --color-primary-foreground: var(--canonical-fgColor-onEmphasis);
+  --color-secondary: var(--canonical-bgColor-muted);
+  --color-secondary-foreground: var(--canonical-fgColor-default);
+  --color-accent: var(--canonical-bgColor-accent-muted);
+  --color-accent-foreground: var(--canonical-fgColor-accent);
+  --color-destructive: var(--canonical-fgColor-danger);
+  --color-destructive-foreground: var(--canonical-fgColor-onEmphasis);
+  --color-border: var(--canonical-borderColor-default);
+  --color-ring: var(--canonical-focus-ring-color);
+
+}

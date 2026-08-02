@@ -1,0 +1,30 @@
+/* Component semantic class overrides — apply to ALL systems */
+.ds-tabs-trigger[data-state="active"] {
+  border-color: var(--accent-focus-border);
+  color: var(--color-foreground);
+}
+
+.ds-selectable-item[data-state="selected"] {
+  background-color: var(--accent-selected-bg);
+  color: var(--accent-selected-fg);
+}
+
+.ds-switch[data-state="checked"] {
+  background-color: var(--accent-button-bg);
+}
+
+.ds-checkbox[data-state="checked"] {
+  background-color: var(--accent-button-bg);
+  color: var(--accent-button-fg);
+}
+
+.ds-radio[data-state="checked"] {
+  background-color: var(--accent-button-bg);
+  border-color: var(--accent-focus-border);
+  color: var(--accent-button-fg);
+}
+
+/* Accent focus border — only for components that explicitly opt in */
+.ds-border-accent-focus:focus-visible {
+  border-color: var(--accent-focus-border);
+}

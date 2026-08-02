@@ -1,0 +1,110 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #0a0a0a;
+  --color-muted: #f3f4f6;
+  --color-muted-foreground: #6b7280;
+  --color-border: #e5e7eb;
+  --color-secondary: #f3f4f6;
+  --color-secondary-foreground: #0a0a0a;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  --color-ring: #3b82f6;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --font-body: 'TASA Orbiter', sans-serif;
+  --font-heading: 'TASA Orbiter', sans-serif;
+  --font-mono: 'Lilex', serif;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+@layer base {
+  :root {
+    color: var(--color-foreground);
+    background: var(--color-background);
+    font-family: var(--font-body);
+  }
+}
+
+@layer utilities {
+  .ds-font-body {
+    font-family: var(--font-body);
+  }
+  .ds-font-heading {
+    font-family: var(--font-heading);
+  }
+  .ds-font-mono {
+    font-family: var(--font-mono);
+  }
+  .ds-text-foreground {
+    color: var(--color-foreground);
+  }
+  .ds-text-muted-foreground {
+    color: var(--color-muted-foreground);
+  }
+  .ds-border {
+    border-color: var(--color-border);
+  }
+  .ds-shadow-sm {
+    box-shadow: var(--shadow-sm);
+  }
+  .ds-shadow-md {
+    box-shadow: var(--shadow-md);
+  }
+  .ds-shadow-lg {
+    box-shadow: var(--shadow-lg);
+  }
+  .ds-radio {
+    border-radius: 9999px;
+  }
+  .ds-switch {
+    border-radius: 9999px;
+  }
+  .ds-radius-selected {
+    border-radius: var(--radius-selected);
+  }
+  .ds-swatch {
+    background-color: var(--swatch-bg);
+  }
+  .ds-accent-chip {
+    background-color: var(--accent-chip-bg);
+  }
+  .ds-checkbox {
+    border-radius: var(--radius-checkbox, var(--radius-selected));
+  }
+  .ds-bg-accent-button {
+    background-color: var(--accent-button-bg);
+  }
+  .ds-text-accent-button {
+    color: var(--accent-button-fg);
+  }
+  .ds-bg-accent-selected {
+    background-color: var(--accent-selected-bg);
+  }
+  .ds-text-accent-selected {
+    color: var(--accent-selected-fg);
+  }
+  .ds-border-accent-focus {
+    /* marker class — focus border color is applied in overrides.css */
+  }
+  .ds-focus-ring:focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

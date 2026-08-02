@@ -1,0 +1,80 @@
+/* Material Design 3 - Baseline Theme (Default Purple Seed)
+   Source: https://github.com/material-foundation/material-tokens
+   Palette: 6 tonal palettes × 13 stops (0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 95, 99, 100)
+   Light and dark have DIFFERENT semantic values
+*/
+
+/* ========== LIGHT THEME ========== */
+[data-design-system="material"] {
+  --color-background: var(--canonical-md-sys-color-background);
+  --color-foreground: var(--canonical-md-sys-color-on-background);
+  --color-muted: var(--canonical-md-sys-color-surface-variant);
+  --color-muted-foreground: var(--canonical-md-sys-color-on-surface-variant);
+  --color-primary: var(--canonical-md-sys-color-primary);
+  --color-primary-foreground: var(--canonical-md-sys-color-on-primary);
+  --color-secondary: var(--canonical-md-sys-color-secondary);
+  --color-secondary-foreground: var(--canonical-md-sys-color-on-secondary);
+  --color-accent: var(--canonical-md-sys-color-surface-variant);
+  --color-accent-foreground: var(--canonical-md-sys-color-on-surface-variant);
+  --color-destructive: var(--canonical-md-sys-color-error);
+  --color-destructive-foreground: var(--canonical-md-sys-color-on-error);
+  --color-border: var(--canonical-md-sys-color-outline-variant);
+  --color-ring: var(--canonical-md-sys-color-primary);
+
+  /* Spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+
+  /* Typography */
+  --font-body: 'TASA Orbiter', system-ui, sans-serif;
+  --font-heading: 'TASA Orbiter', system-ui, sans-serif;
+  --font-mono: 'Lilex', serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* Border Radius (M3 shape tokens) */
+  /* CSS fallback for checkbox radius before context effect runs */
+  --radius-checkbox: 0.125rem;
+
+  /* Shadows (M3 elevation) */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.1);
+  --shadow-md: 0 2px 6px 0 rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 4px 12px 0 rgb(0 0 0 / 0.1);
+
+}
+
+/* ========== DARK THEME ========== */
+[data-theme="dark"][data-design-system="material"] {
+  --color-background: var(--canonical-md-sys-color-background);
+  --color-foreground: var(--canonical-md-sys-color-on-background);
+  --color-muted: var(--canonical-md-sys-color-surface-variant);
+  --color-muted-foreground: var(--canonical-md-sys-color-on-surface-variant);
+  --color-primary: var(--canonical-md-sys-color-primary);
+  --color-primary-foreground: var(--canonical-md-sys-color-on-primary);
+  --color-secondary: var(--canonical-md-sys-color-secondary);
+  --color-secondary-foreground: var(--canonical-md-sys-color-on-secondary);
+  --color-accent: var(--canonical-md-sys-color-surface-variant);
+  --color-accent-foreground: var(--canonical-md-sys-color-on-surface-variant);
+  --color-destructive: var(--canonical-md-sys-color-error);
+  --color-destructive-foreground: var(--canonical-md-sys-color-on-error);
+  --color-border: var(--canonical-md-sys-color-outline-variant);
+  --color-ring: var(--canonical-md-sys-color-primary);
+
+}

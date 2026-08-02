@@ -1,0 +1,112 @@
+/* Radix UI Themes - Default Gray Theme
+   Source: https://github.com/radix-ui/colors (official repo)
+   Palette: 12 hues × 12 steps (1-12)
+   Light and dark have DIFFERENT values
+   Semantic tokens defined directly in CSS
+*/
+
+/* ========== LIGHT THEME ========== */
+[data-design-system="radix"] {
+  --color-background: var(--canonical-background-default);
+  --color-foreground: var(--canonical-foreground-default);
+  --color-muted: var(--canonical-muted);
+  --color-muted-foreground: var(--canonical-muted-foreground);
+  --color-primary: var(--canonical-primary);
+  --color-primary-foreground: var(--canonical-primary-foreground);
+  --color-secondary: var(--canonical-secondary);
+  --color-secondary-foreground: var(--canonical-secondary-foreground);
+  --color-accent: var(--canonical-accent);
+  --color-accent-foreground: var(--canonical-accent-foreground);
+  --color-destructive: var(--canonical-destructive);
+  --color-destructive-foreground: var(--canonical-destructive-foreground);
+  --color-border: var(--canonical-border);
+  --color-ring: var(--canonical-ring);
+
+  /* Typography */
+  --font-body: 'TASA Orbiter', system-ui, sans-serif;
+  --font-heading: 'TASA Orbiter', system-ui, sans-serif;
+  --font-mono: 'Lilex', serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* Spacing (Radix scale) */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.5rem;
+  --spacing-6: 2rem;
+
+  /* Border Radius (Radix medium) */
+  /* CSS fallback for checkbox radius before context effect runs */
+  --radius-checkbox: 3px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 2px 8px 0 rgb(0 0 0 / 0.08);
+  --shadow-lg: 0 4px 12px rgb(0 0 0 / 0.1);
+
+}
+
+/* ========== DARK THEME ========== */
+[data-theme="dark"][data-design-system="radix"] {
+  --color-background: var(--canonical-background-default);
+  --color-foreground: var(--canonical-foreground-default);
+  --color-muted: var(--canonical-muted);
+  --color-muted-foreground: var(--canonical-muted-foreground);
+  --color-primary: var(--canonical-primary);
+  --color-primary-foreground: var(--canonical-primary-foreground);
+  --color-secondary: var(--canonical-secondary);
+  --color-secondary-foreground: var(--canonical-secondary-foreground);
+  --color-accent: var(--canonical-accent);
+  --color-accent-foreground: var(--canonical-accent-foreground);
+  --color-destructive: var(--canonical-destructive);
+  --color-destructive-foreground: var(--canonical-destructive-foreground);
+  --color-border: var(--canonical-border);
+  --color-ring: var(--canonical-ring);
+
+  /* Typography */
+  --font-body: 'TASA Orbiter', system-ui, sans-serif;
+  --font-heading: 'TASA Orbiter', system-ui, sans-serif;
+  --font-mono: 'Lilex', serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* Spacing (Radix scale) */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.5rem;
+  --spacing-6: 2rem;
+
+  /* Border Radius (Radix medium) */
+  /* CSS fallback for checkbox radius before context effect runs */
+  --radius-checkbox: 3px;
+
+  /* Shadows (dark-adjusted) */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.2);
+  --shadow-md: 0 2px 8px 0 rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 4px 12px rgb(0 0 0 / 0.4);
+
+}

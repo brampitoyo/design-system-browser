@@ -1,0 +1,78 @@
+/* Salesforce Lightning Design System - Default Cosmos Theme
+   Source: https://github.com/salesforce-ux/design-system (official repo)
+   Palette: 12 hues × 12 stops + neutral + semantic colors
+   Light/dark have different values
+*/
+
+/* ========== LIGHT THEME ========== */
+[data-design-system="lightning"] {
+  --color-background: var(--canonical-slds-color-background);
+  --color-foreground: var(--canonical-slds-color-text-default);
+  --color-muted: var(--canonical-slds-color-background);
+  --color-muted-foreground: var(--canonical-slds-color-text-weak);
+  --color-primary: var(--canonical-slds-color-background-brand);
+  --color-primary-foreground: var(--canonical-slds-color-text-brand);
+  --color-secondary: var(--canonical-slds-color-background);
+  --color-secondary-foreground: var(--canonical-slds-color-text-default);
+  --color-accent: var(--canonical-slds-color-background);
+  --color-accent-foreground: var(--canonical-slds-color-text-default);
+  --color-destructive: var(--canonical-slds-color-text-destructive);
+  --color-destructive-foreground: var(--canonical-slds-color-text-default);
+  --color-border: var(--canonical-slds-color-border);
+  --color-ring: var(--canonical-slds-color-border-brand);
+
+  /* Spacing (SLDS scale) */
+  --spacing-xxs: 0.125rem;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 0.75rem;
+  --spacing-lg: 1rem;
+  --spacing-xl: 1.5rem;
+  --spacing-xxl: 2rem;
+  --spacing-xxxl: 3rem;
+
+  /* Typography */
+  --font-body: 'TASA Orbiter', system-ui, sans-serif;
+  --font-heading: 'TASA Orbiter', system-ui, sans-serif;
+  --font-mono: 'Lilex', serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.8125rem;
+  --font-size-md: 0.875rem;
+  --font-size-lg: 1rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* Border Radius (SLDS scale) */
+  /* CSS fallback for checkbox radius before context effect runs */
+  --radius-checkbox: 0.25rem;
+
+  /* Shadows (SLDS elevation) */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.07);
+  --shadow-md: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+/* ========== DARK THEME ========== */
+[data-theme="dark"][data-design-system="lightning"] {
+  --color-background: var(--canonical-slds-color-background);
+  --color-foreground: var(--canonical-slds-color-text-default);
+  --color-muted: var(--canonical-slds-color-background);
+  --color-muted-foreground: var(--canonical-slds-color-text-weak);
+  --color-primary: var(--canonical-slds-color-background-brand);
+  --color-primary-foreground: var(--canonical-slds-color-text-brand);
+  --color-secondary: var(--canonical-slds-color-background);
+  --color-secondary-foreground: var(--canonical-slds-color-text-default);
+  --color-accent: var(--canonical-slds-color-background);
+  --color-accent-foreground: var(--canonical-slds-color-text-default);
+  --color-border: var(--canonical-slds-color-border);
+  --color-ring: var(--canonical-slds-color-border-brand);
+
+}

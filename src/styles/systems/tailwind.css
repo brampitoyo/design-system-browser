@@ -1,0 +1,105 @@
+/* Tailwind CSS Design System - Light Theme
+   Source: https://tailwindcss.com/docs/color
+   Full palette + spacing, typography, radius, shadows
+*/
+
+[data-design-system="tailwind"] {
+  --color-background: var(--canonical-background-default);
+  --color-foreground: var(--canonical-foreground-default);
+  --color-muted: var(--canonical-muted);
+  --color-muted-foreground: var(--canonical-muted-foreground);
+  --color-primary: var(--canonical-primary);
+  --color-primary-foreground: var(--canonical-primary-foreground);
+  --color-secondary: var(--canonical-secondary);
+  --color-secondary-foreground: var(--canonical-secondary-foreground);
+  --color-accent: var(--canonical-accent);
+  --color-accent-foreground: var(--canonical-accent-foreground);
+  --color-destructive: var(--canonical-destructive);
+  --color-destructive-foreground: var(--canonical-destructive-foreground);
+  --color-border: var(--canonical-border);
+  --color-ring: var(--canonical-ring);
+
+  /* Spacing (Tailwind scale) */
+  --spacing-px: 1px;
+  --spacing-0: 0;
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+  --spacing-24: 6rem;
+  --spacing-32: 8rem;
+  --spacing-40: 10rem;
+  --spacing-48: 12rem;
+  --spacing-56: 14rem;
+  --spacing-64: 16rem;
+
+  /* Typography */
+  --font-body: 'TASA Orbiter', system-ui, sans-serif;
+  --font-heading: 'TASA Orbiter', system-ui, sans-serif;
+  --font-mono: 'Lilex', serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+  --font-size-6xl: 3.75rem;
+  --font-size-7xl: 4.5rem;
+  --font-size-8xl: 6rem;
+  --font-size-9xl: 8rem;
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+
+  
+  /* Border Radius */
+  /* CSS fallback for checkbox radius before context effect runs */
+  --radius-checkbox: 0.125rem;
+  /* Shadows */
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --shadow-none: 0 0 #0000;
+
+}
+
+/* ========== DARK THEME ========== */
+[data-theme="dark"][data-design-system="tailwind"] {
+  --color-background: var(--canonical-background-default);
+  --color-foreground: var(--canonical-foreground-default);
+  --color-muted: var(--canonical-muted);
+  --color-muted-foreground: var(--canonical-muted-foreground);
+  --color-secondary: var(--canonical-secondary);
+  --color-secondary-foreground: var(--canonical-secondary-foreground);
+  --color-accent: var(--canonical-accent);
+  --color-accent-foreground: var(--canonical-accent-foreground);
+  --color-destructive: var(--canonical-destructive);
+  --color-destructive-foreground: var(--canonical-destructive-foreground);
+  --color-border: var(--canonical-border);
+  --color-ring: var(--canonical-ring);
+}

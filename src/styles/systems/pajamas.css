@@ -1,0 +1,80 @@
+/* GitLab Pajamas Design System
+   Source: https://design.gitlab.com/product-foundations/color
+   Same palette used in both light/dark, applied differently per theme
+*/
+
+/* ========== LIGHT THEME ========== */
+[data-design-system="pajamas"] {
+  --color-background: var(--canonical-background-color-default);
+  --color-foreground: var(--canonical-text-color-default);
+  --color-muted: var(--canonical-background-color-subtle);
+  --color-muted-foreground: var(--canonical-text-color-subtle);
+  --color-primary: var(--canonical-action-selected-background-color-default);
+  --color-primary-foreground: var(--canonical-action-selected-foreground-color-default);
+  --color-secondary: var(--canonical-background-color-subtle);
+  --color-secondary-foreground: var(--canonical-text-color-default);
+  --color-accent: var(--canonical-background-color-subtle);
+  --color-accent-foreground: var(--canonical-text-color-default);
+  --color-destructive: var(--canonical-action-danger-foreground-color-default);
+  --color-destructive-foreground: var(--canonical-action-selected-foreground-color-default);
+  --color-border: var(--canonical-border-color-default);
+  --color-ring: var(--canonical-focus-ring-outer-color);
+
+  /* Spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+
+  /* Typography */
+  --font-body: 'TASA Orbiter', system-ui, sans-serif;
+  --font-heading: 'TASA Orbiter', system-ui, sans-serif;
+  --font-mono: 'Lilex', serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  
+  /* Border Radius */
+  /* CSS fallback for checkbox radius before context effect runs */
+  --radius-checkbox: 0.125rem;
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.04);
+  --shadow-md: 0 2px 8px rgb(0 0 0 / 0.08);
+  --shadow-lg: 0 4px 16px rgb(0 0 0 / 0.1);
+
+}
+
+/* ========== DARK THEME ========== */
+[data-theme="dark"][data-design-system="pajamas"] {
+  --color-background: var(--canonical-background-color-default);
+  --color-foreground: var(--canonical-text-color-default);
+  --color-muted: var(--canonical-background-color-subtle);
+  --color-muted-foreground: var(--canonical-text-color-subtle);
+  --color-primary: var(--canonical-action-selected-background-color-default);
+  --color-primary-foreground: var(--canonical-action-selected-foreground-color-default);
+  --color-secondary: var(--canonical-background-color-subtle);
+  --color-secondary-foreground: var(--canonical-text-color-default);
+  --color-accent: var(--canonical-background-color-subtle);
+  --color-accent-foreground: var(--canonical-text-color-default);
+  --color-destructive: var(--canonical-action-danger-foreground-color-default);
+  --color-destructive-foreground: var(--canonical-action-selected-foreground-color-default);
+  --color-border: var(--canonical-border-color-default);
+  --color-ring: var(--canonical-focus-ring-outer-color);
+  --radius-checkbox: 0.125rem;
+  /* CSS fallback for checkbox radius before context effect runs */
+}
