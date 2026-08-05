@@ -101,15 +101,15 @@ export default function ComponentsPage() {
           </p>
           <div className="mt-4 flex flex-wrap items-center gap-6">
             <div className="flex items-center gap-2">
-              <Switch id="switch-demo" />
+              <Switch id="switch-demo" defaultChecked />
               <label htmlFor="switch-demo" className="text-sm ds-text-foreground">Switch</label>
             </div>
             <div className="flex items-center gap-2">
-              <Checkbox id="checkbox-demo" />
+              <Checkbox id="checkbox-demo" defaultChecked />
               <label htmlFor="checkbox-demo" className="text-sm ds-text-foreground">Checkbox</label>
             </div>
             <div className="flex items-center gap-2">
-              <RadioGroup value="1" className="flex items-center gap-2">
+              <RadioGroup defaultValue="1" className="flex items-center gap-2">
                 <div className="flex items-center gap-1">
                   <RadioGroupItem value="1" id="radio-1" />
                   <label htmlFor="radio-1" className="text-sm ds-text-foreground">Option 1</label>

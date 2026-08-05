@@ -8,10 +8,10 @@ export const RadioGroupItem = ({
   <Primitive.Item
     className={[
       'h-5 w-5 shrink-0 rounded-full ds-border ds-shadow-sm ds-radio',
-       // Radio buttons are always fully rounded per accessibility guidelines — do not use ds-radius-selected
       'focus-visible:outline-none focus-visible:ring-2',
       'disabled:cursor-not-allowed disabled:opacity-50',
-      'data-[state=unchecked]:ds-border data-[state=unchecked]:bg-background',
+      'data-[state=unchecked]:ds-border data-[state=unchecked]:bg-muted',
+      'data-[state=checked]:border-[var(--accent-focus-border)] data-[state=checked]:bg-[var(--accent-selected-bg)]',
       className,
     ]
       .filter(Boolean)
@@ -19,7 +19,7 @@ export const RadioGroupItem = ({
     {...props}
   >
     <Primitive.Indicator className="flex h-full w-full items-center justify-center">
-      <div className="h-2 w-2 rounded-full ds-text-accent-button" />
+      <div className="h-2 w-2 rounded-full bg-white" />
     </Primitive.Indicator>
   </Primitive.Item>
 );
