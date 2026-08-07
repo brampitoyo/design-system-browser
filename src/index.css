@@ -105,6 +105,7 @@
   scroll-padding-inline: 0.75rem;
   padding-inline: 0.75rem;
   border: none;
+  overflow-y: visible;
 }
 
 .nav-radio-label {
