@@ -105,7 +105,6 @@
   scroll-padding-inline: 0.75rem;
   padding-inline: 0.75rem;
   border: none;
-  overflow-y: visible;
 }
 
 .nav-radio-label {
@@ -155,8 +154,7 @@
 }
 
 .nav-radio-input:checked + .nav-accent-label {
-  outline: 2px solid var(--color-border);
-  outline-offset: 0;
+  box-shadow: 0 0 0 2px var(--color-border);
 }
 
 .nav-accent-circle {
@@ -168,13 +166,11 @@
 
 .nav-radio-input:focus + .nav-accent-label,
 .nav-radio-input:checked:focus + .nav-accent-label {
-  outline: 2px solid #f5f5f5;
-  outline-offset: 0;
+  box-shadow: 0 0 0 2px #f5f5f5;
 }
 
 .nav-radio-input + .nav-accent-label:hover {
-  outline: 2px solid #f5f5f5;
-  outline-offset: 0;
+  box-shadow: 0 0 0 2px #f5f5f5;
 }
 
 @media (prefers-reduced-motion: reduce) {
