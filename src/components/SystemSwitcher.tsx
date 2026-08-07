@@ -43,12 +43,11 @@ interface NavLayerProps {
 
 function NavLayer({ name, onClick, children }: NavLayerProps) {
   return (
-    <fieldset
-      className="flex items-center gap-1 overflow-x-auto min-w-0 nav-layer"
-      onClick={onClick}
-    >
+    <fieldset className="nav-layer" onClick={onClick}>
       <legend className="sr-only">{name}</legend>
-      {children}
+      <div className="flex items-center gap-1 overflow-x-auto min-w-0">
+        {children}
+      </div>
     </fieldset>
   );
 }
