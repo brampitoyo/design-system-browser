@@ -103,7 +103,8 @@
 /* Nav radio group styles */
 .nav-layer {
   scroll-padding-inline: 0.75rem;
-  padding-inline: 0.25rem;
+  padding-inline: 0.75rem;
+  border: none;
 }
 
 .nav-radio-label {
