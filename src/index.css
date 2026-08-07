@@ -100,6 +100,80 @@
   }
 }
 
+/* Nav radio group styles */
+.nav-layer {
+  scroll-padding-inline: 0.75rem;
+}
+
+.nav-radio-label {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-family: var(--font-mono);
+  color: #a3a3a3;
+  transition: color 0.15s, background-color 0.15s;
+  cursor: pointer;
+  border-radius: 0;
+  flex-shrink: 0;
+}
+
+.nav-radio-input:checked + .nav-radio-label {
+  background-color: #262626;
+  color: #d4d4d4;
+}
+
+.nav-radio-input:focus + .nav-radio-label {
+  background-color: #f5f5f5;
+  color: #171717;
+  outline: none;
+}
+
+.nav-radio-input:checked:focus + .nav-radio-label {
+  background-color: #f5f5f5;
+  color: #171717;
+}
+
+.nav-radio-input + .nav-radio-label:hover {
+  background-color: #f5f5f5;
+  color: #171717;
+}
+
+.nav-accent-label {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: outline-color 0.15s;
+  flex-shrink: 0;
+}
+
+.nav-radio-input:checked + .nav-accent-label {
+  outline: 2px solid var(--color-border);
+  outline-offset: 0;
+}
+
+.nav-accent-circle {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 9999px;
+}
+
+.nav-radio-input:focus + .nav-accent-label,
+.nav-radio-input:checked:focus + .nav-accent-label {
+  outline: 2px solid #f5f5f5;
+  outline-offset: 0;
+}
+
+.nav-radio-input + .nav-accent-label:hover {
+  outline: 2px solid #f5f5f5;
+  outline-offset: 0;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
